@@ -8,6 +8,9 @@ Useful links:
 - Setup: [MacOS Install with Metal GPU - llama-cpp-python](https://llama-cpp-python.readthedocs.io/en/latest/install/macos/)
 - Inspiration: [Using llama-cpp-python grammars to generate JSON | Simon Willison’s TILs](https://til.simonwillison.net/llms/llama-cpp-python-grammars)
 
+## Models:
+- For the most part Im using the quantized versions of llms from the bloke: [TheBloke/Mistral-7B-Instruct-v0.1-GGUF · Hugging Face](https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF)
+
 
 ## Usage:
 
