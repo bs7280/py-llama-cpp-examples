@@ -33,11 +33,22 @@ schema = '''
 grammar = LlamaGrammar.from_json_schema(schema)
 llm = Llama("mistral-7b-instruct-v0.1.Q4_K_M.gguf")
 
+prompt = "Give me an API spec for a 28 year old named Ben"
+
 response = llm(
-    "Give me an API spec for a 28 year old named Ben",
+    prompt,
     grammar=grammar, max_tokens=-1
 )
 
+print(f"Prompt: \n**{prompt}**")
+print("Json Schema:")
+print('```')
+print(json.dumps(json.loads(schema), indent=4))
+print('```')
+print("-------------------")
+print("Response:")
+print('```')
 print(json.dumps(json.loads(response['choices'][0]['text']), indent=4))
+print('```')
 
 

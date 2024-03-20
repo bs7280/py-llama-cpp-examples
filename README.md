@@ -14,7 +14,44 @@ Useful links:
 
 ## Usage:
 
+### Mistral Json Schema - Basic example
 - minstral_json_schema.py - Demonstrates using a 7B model to generate valid output for a given JsonSchema. Couple things to note
     - output should always match json schema given
     - the given Json Schema **Does NOT** count towards the context limit.
     - Using a 7B model which is pretty fast on my machine.
+
+#### Output:
+
+Prompt:
+**Give me an API spec for a 28 year old named Ben**
+Json Schema:
+```
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Name and Age API",
+    "description": "An API that accepts a name and age as input parameters.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the person."
+        },
+        "age": {
+            "type": "integer",
+            "description": "The age of the person."
+        }
+    },
+    "required": [
+        "name",
+        "age"
+    ]
+}
+```
+-------------------
+Response:
+```
+{
+    "name": "Ben",
+    "age": 28
+}
+```
