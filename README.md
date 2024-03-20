@@ -15,7 +15,7 @@ Useful links:
 ## Usage:
 
 ### Mistral Json Schema - Basic example
-- minstral_json_schema.py - Demonstrates using a 7B model to generate valid output for a given JsonSchema. Couple things to note
+- mistral_json_schema.py - Demonstrates using a 7B model to generate valid output for a given JsonSchema. Couple things to note
     - output should always match json schema given
     - the given Json Schema **Does NOT** count towards the context limit.
     - Using a 7B model which is pretty fast on my machine.
