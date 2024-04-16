@@ -1,0 +1,17 @@
+Elapsed: 5.7254860401153564s Prompt: Lets catch up about the foobar project tomorrow at 4pm CST
+{
+    "title": "catch up about the foobar project",
+    "description": "Hey, lets schedule a call to catch up about the foobar project on tomorrow at 4pm CST. Please let me know if this works for you.",
+    "time": "tomorrow at 4pm CST",
+    "timezone": "CST"
+}
+------
+------
+Elapsed: 4.201164960861206s Prompt: Generate a json object for the following meeting: Lets get lunch at Al's Beef tomorrow at lunch
+time. We should invite Tom and Sarah to join us.
+
+{
+    "dateTime": "tomorrow at lunchtime",
+    "location": "Al's Beef",
+    "attendees": ["Tom", "Sarah"]
+}
